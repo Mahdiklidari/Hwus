@@ -24,6 +24,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             width: 90%;
             max-width: 400px;
+            overflow-wrap: break-word;
         }
         .container input[type="text"] {
             padding: 10px;
@@ -50,7 +51,7 @@
         .typing {
             display: inline-block;
             overflow: hidden;
-            white-space: nowrap;
+            white-space: normal;
             border-right: 3px solid;
             animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
             max-width: 100%;
