@@ -14,6 +14,7 @@
             background-size: cover;
             font-family: Arial, sans-serif;
             color: white;
+            margin: 0;
         }
         .container {
             text-align: center;
@@ -21,11 +22,13 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
         }
         .container input[type="text"] {
             padding: 10px;
             margin: 10px 0;
-            width: 80%;
+            width: 100%;
             border: none;
             border-radius: 5px;
         }
@@ -38,6 +41,8 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            width: 100%;
+            max-width: 200px;
         }
         .container button:hover {
             background-color: #0056b3;
@@ -56,6 +61,15 @@
         @keyframes blink-caret {
             from, to { border-color: transparent; }
             50% { border-color: white; }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .container input[type="text"], .container button {
+                padding: 8px;
+                margin: 8px 0;
+            }
         }
     </style>
 </head>
