@@ -49,24 +49,10 @@
         .container button:hover {
             background-color: #0056b3;
         }
-        .typing {
-            display: inline-block;
-            overflow: hidden;
-            white-space: normal;
-            border-right: 3px solid;
-            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-            max-width: 100%;
-            word-wrap: break-word;
+        .text {
             direction: rtl;
             text-align: right;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent; }
-            50% { border-color: white; }
+            margin-bottom: 20px;
         }
         @media (max-width: 600px) {
             .container {
@@ -81,7 +67,7 @@
 </head>
 <body>
     <div class="container">
-        <p class="typing">برای ورود به سایت اصلی باید کد ورود را از گروه پشتیبانی در اینجا وارد کنید</p>
+        <p class="text">برای ورود به سایت اصلی باید کد ورود را از گروه پشتیبانی در اینجا وارد کنید</p>
         <input type="text" id="code" placeholder="کد ورود را وارد کنید">
         <br>
         <button onclick="joinSupportGroup()">عضویت در گروه پشتیبانی</button>
